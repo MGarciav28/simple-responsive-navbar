@@ -1,5 +1,5 @@
 body{
-    background: #748ffc;
+    background: #303445;
     background-repeat: no-repeat;
 }
 
@@ -39,7 +39,52 @@ main{
     display: none;
 }
 
+.navbar label .icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.icon-container .hamburger-icon{
+    width: 30px;
+    height: 6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #000;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.hamburger-icon::after, 
+.hamburger-icon::before{
+    content: "";    
+    width: 100%;
+    height: 6px;
+    border-radius: 5px;
+    background-color: #000;
+    position: absolute;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.hamburger-icon::before{
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+}
+.hamburger-icon::after{
+    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+}
 
 @media screen and (max-width:600px){
  .menu{
