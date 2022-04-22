@@ -43,6 +43,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-color: red;
 }
 
 .icon-container .hamburger-icon{
@@ -84,6 +85,30 @@ main{
     -moz-transform: translateY(10px);
     -ms-transform: translateY(10px);
     -o-transform: translateY(10px);
+}
+
+.icon-container.open .hamburger-icon{
+    background-color: transparent;
+    transform: translateX(-30px);
+    -webkit-transform: translateX(-30px);
+    -moz-transform: translateX(-30px);
+    -ms-transform: translateX(-30px);
+    -o-transform: translateX(-30px);
+}
+
+.icon-container.open .hamburger-icon::before{
+    transform: rotate(45deg)    translate(35px, -35px);
+    -webkit-transform: rotate(45deg)    translate(35px, -35px);
+    -moz-transform: rotate(45deg)    translate(35px, -35px);
+    -ms-transform: rotate(45deg)    translate(35px, -35px);
+    -o-transform: rotate(45deg)    translate(35px, -35px);
+}
+.icon-container.open .hamburger-icon::after{
+    transform: rotate(-45deg)    translate(35px, 35px);
+    -webkit-transform: rotate(-45deg)    translate(35px, 35px);
+    -moz-transform: rotate(-45deg)    translate(35px, 35px);
+    -ms-transform: rotate(-45deg)    translate(35px, 35px);
+    -o-transform: rotate(-45deg)    translate(35px, 35px);
 }
 
 @media screen and (max-width:600px){
